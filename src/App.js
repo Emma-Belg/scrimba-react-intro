@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./Footer";
+import TaskOne from "./task1.js";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        (
+            <div>
+                <ul>
+                    <li>React is awesome</li>
+                    <li>I am learning</li>
+                    <li>Thanks to Scrimba</li>
+                </ul>
+
+              <TaskOne/>
+              <Footer/>
+            </div>
+        )
+    );
 }
 
 export default App;
+
